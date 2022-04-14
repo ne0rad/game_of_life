@@ -2,6 +2,6 @@ import MainBox from "./MainBox";
 import Title from "./Title";
 import GameBox from "./GameBox";
 import Controls from "./Controls";
-import GameGrid from './GameGrid';
+import Game from './Game';
 
-export { MainBox, Title, GameBox, Controls, GameGrid };
+export { MainBox, Title, GameBox, Controls, Game };

@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
-import '../styles/GameGrid.css';
+import '../styles/Game.css';
 import Cell from './Cell';
 import gameOfLife from '../gameOfLife';
 
-export default function GameGrid() {
+export default function Game() {
 
     const [cells, setCells] = useState([]);
 
     useEffect(() => {
         const newCells = [];
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 50; i++) {
             newCells.push([]);
-            for (let j = 0; j < 10; j++) {
-                newCells[i].push(Math.random() > 0.5 ? 1 : 0);
+            for (let j = 0; j < 50; j++) {
+                newCells[i].push(Math.random() > 0.9 ? 1 : 0);
             }
         }
-        setCells(newCells);
+        setCells(gameOfLife(newCells));
     }, []);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function GameGrid() {
         setTimeout(() => {
             const newCells = gameOfLife(cells);
             setCells(newCells);
-        }, 1000);
+        }, 250);
     }, [cells]);
     return (
         <div id="grid">

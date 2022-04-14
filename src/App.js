@@ -1,4 +1,4 @@
-import { MainBox, GameBox, Title, GameGrid } from './components';
+import { MainBox, GameBox, Title, Game } from './components';
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       <Title />
 
       <GameBox>
-        <GameGrid />
+        <Game />
       </GameBox>
 
     </MainBox>
