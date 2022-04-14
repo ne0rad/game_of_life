@@ -2,7 +2,7 @@
   "name": "game_of_life",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ne0rad.github.io/game-of-life",
+  "homepage": "https://ne0rad.github.io/game_of_life/",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
